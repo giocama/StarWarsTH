@@ -4,24 +4,24 @@ import { Card, Grid } from 'semantic-ui-react';
 export default function Favorite({ data  }) {
     return (
         <>
-            <h1>People</h1>
+            <h1>Favorite</h1>
             <Grid columns={3}>
                 {data.map((favorite, i) => {
                     return (
                         <Grid.Column key={i}>
                             <Card>
                                 <Card.Content>
-                                    <Card.Header> {people.name} </Card.Header>
+                                    <Card.Header> {favorite.name} </Card.Header>
                                     <Card.Description>
 
                                         <strong>Height</strong>
-                                        <p>{people.height}</p>
+                                        <p>{favorite.height}</p>
 
                                         <strong>Mass</strong>
-                                        <p>{people.mass}</p>
+                                        <p>{favorite.mass}</p>
 
                                         <strong>Birth Year</strong>
-                                        <p>{people.birth_year}</p>
+                                        <p>{favorite.birth_year}</p>
 
                                     </Card.Description>
                                 </Card.Content>
